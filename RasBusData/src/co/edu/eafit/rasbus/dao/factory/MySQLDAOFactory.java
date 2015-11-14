@@ -3,7 +3,8 @@ package co.edu.eafit.rasbus.dao.factory;
 import java.sql.Connection;
 
 import co.edu.eafit.rasbus.dao.posicion.MysqlPosicionDAO;
-import co.edu.eafit.rasbus.dao.vehiculos.OracleVehiculoDAO;
+import co.edu.eafit.rasbus.dao.posicion.PosicionDAO;
+import co.edu.eafit.rasbus.dao.vehiculos.MysqlVehiculoDAO;
 import co.edu.eafit.rasbus.dao.vehiculos.VehiculoDAO;
 
 /**
@@ -20,19 +21,27 @@ public class MySQLDAOFactory extends DAOFactory {
 	/**
 	 * Metodo encargado de crear la conexion a la base de datos Mysql
 	 * 
-	 * @return
+	 * @return Connection
 	 */
 	public static Connection createConnection() {
 		return null;
 	}
 
-	
+	/**
+	 * Metodo que retorna la instancia Mysql vehiculo
+	 * 
+	 * @return VehiculoDAO
+	 */
 	public VehiculoDAO getVehiculoDAO() {
-		return new OracleVehiculoDAO();
+		return new MysqlVehiculoDAO();
 	}
 	
-	
-	public co.edu.eafit.rasbus.dao.posicion.PosicionDAO getPosicionDAO() {
+	/**
+	 * Metodo que retorna la instancia Mysql posicion
+	 * 
+	 * @return PosicionDAO
+	 */
+	public PosicionDAO getPosicionDAO() {
 		return new MysqlPosicionDAO();
 	}
 

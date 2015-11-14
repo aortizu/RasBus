@@ -21,7 +21,10 @@ public class OraclePosicionDAO implements PosicionDAO {
 	public OraclePosicionDAO() {
 		OracleDAOFactory.createConnection();
 	}
-
+	
+	/**
+	 *Funciones query 
+	 */	
 	@Override
 	public int insertPosicion(Posicion Posicion) {
 		// TODO Auto-generated method stub

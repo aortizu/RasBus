@@ -26,11 +26,20 @@ public class OracleDAOFactory extends DAOFactory {
 		return null;
 	}
 
-	
+	/**
+	 * Metodo que retorna la instancia Oracle vehiculo
+	 * 
+	 * @return VehiculoDAO
+	 */
 	public VehiculoDAO getVehiculoDAO() {
 		return new OracleVehiculoDAO();
 	}
 
+	/**
+	 * Metodo que retorna la instancia Oracle posicion
+	 * 
+	 * @return PosicionDAO
+	 */
 	public co.edu.eafit.rasbus.dao.posicion.PosicionDAO getPosicionDAO() {
 		return new OraclePosicionDAO();
 	}

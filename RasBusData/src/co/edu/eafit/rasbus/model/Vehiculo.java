@@ -3,7 +3,7 @@ package co.edu.eafit.rasbus.model;
 import java.util.List;
 
 /**
- * Objeto que representa una infraccion de transito
+ * Objeto que representa un vehiculo
  * 
  * @author AORTIZU
  * 
@@ -52,8 +52,5 @@ public class Vehiculo {
 	public void setSensores(List<String> sensores) {
 		this.sensores = sensores;
 	}
-
-
-	
 
 }

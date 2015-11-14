@@ -16,12 +16,15 @@ import co.edu.eafit.rasbus.model.Posicion;
 public class MysqlPosicionDAO implements PosicionDAO {
 
 	/**
-	 * Metodo constructor de la clase
+	 *Constructor
 	 */
 	public MysqlPosicionDAO() {
 		OracleDAOFactory.createConnection();
 	}
 
+	/**
+	 *Funciones query 
+	 */	
 	@Override
 	public int insertPosicion(Posicion Posicion) {
 		// TODO Auto-generated method stub

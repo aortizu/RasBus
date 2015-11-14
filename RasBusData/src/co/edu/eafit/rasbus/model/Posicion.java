@@ -1,7 +1,7 @@
 package co.edu.eafit.rasbus.model;
 
 /**
- * Clase que representa un Posicion de la aplicación
+ * Clase que representa un Posicion grografica
  * 
  * @author AORTIZU
  * 
@@ -14,7 +14,7 @@ public class Posicion {
 
 
 	/**
-	 * Constructor de la clase
+	 * Constructor
 	 * 
 	 * @param coordenadaX
 	 * @param coordenadaY

@@ -8,7 +8,7 @@ import co.edu.eafit.rasbus.model.Vehiculo;
 
 /**
  * Clase que se encarga del manejo de los metodos que acceden a Base de Datos,
- * para consultar, modificar, crear y eliminar información de los Vehiculoes
+ * para consultar, modificar, crear y eliminar información de los Vehiculos
  * del negocio.
  * 
  * @author AORTIZU
@@ -23,87 +23,42 @@ public class MysqlVehiculoDAO implements VehiculoDAO {
 		MySQLDAOFactory.createConnection();
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * co.edu.eafit.rasbus.dao.vehiculos.VehiculoesDAO#insertVehiculo
-	 * (co.edu.eafit.rasbus.model.Vehiculo)
-	 */
+
 	public int insertVehiculo(Vehiculo vehiculo) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * co.edu.eafit.rasbus.dao.vehiculos.VehiculoesDAO#deleteVehiculo
-	 * (co.edu.eafit.rasbus.model.Vehiculo)
-	 */
 	public boolean deleteVehiculo(Vehiculo vehiculo) {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * co.edu.eafit.rasbus.dao.vehiculos.VehiculoesDAO#findVehiculo
-	 * (int)
-	 */
 	public Vehiculo findVehiculo(int idVehiculo) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * co.edu.eafit.rasbus.dao.vehiculos.VehiculoesDAO#updateVehiculo
-	 * (co.edu.eafit.rasbus.model.Vehiculo)
-	 */
+	
 	public boolean updateVehiculo(Vehiculo vehiculo) {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * co.edu.eafit.rasbus.dao.vehiculos.VehiculoesDAO#selectVehiculos
-	 * ()
-	 */
+	
 	public List<Vehiculo> selectVehiculos() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * co.edu.eafit.rasbus.dao.vehiculos.VehiculoesDAO#selectVehiculos
-	 * ()
-	 */
 	public List<Vehiculo> findVehiculoByType(long idConductor) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 	
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see co.edu.eafit.rasbus.dao.vehiculos.VehiculoesDAO#
-	 * findVehiculoByConductor(long)
-	 */
 	public List<Vehiculo> findVehiculoByConductor(long idConductor) {
-		// se simula la consulta en BD, el cual retorna la coleccion de
+		// se simula la consulta en BD, la cual retorna la coleccion de
 		// vehiculos
 
 		List<Vehiculo> vehiculos = new ArrayList<Vehiculo>();
@@ -132,7 +87,5 @@ public class MysqlVehiculoDAO implements VehiculoDAO {
 
 		return vehiculos;
 	}
-
-
 
 }

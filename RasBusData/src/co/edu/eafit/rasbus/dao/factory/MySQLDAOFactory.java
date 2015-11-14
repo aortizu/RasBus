@@ -1,0 +1,39 @@
+package co.edu.eafit.rasbus.dao.factory;
+
+import java.sql.Connection;
+
+import co.edu.eafit.rasbus.dao.posicion.MysqlPosicionDAO;
+import co.edu.eafit.rasbus.dao.vehiculos.OracleVehiculoDAO;
+import co.edu.eafit.rasbus.dao.vehiculos.VehiculoDAO;
+
+/**
+ * Clase factory para administrar la conexion de la base de datos Mysql
+ * 
+ * @author AORTIZU
+ *
+ */
+public class MySQLDAOFactory extends DAOFactory {
+
+	public static final String DRIVER = "com.mysql.jdbc.Driver";
+	public static final String DBURL = "jdbc:mysql:[host]:[port]:[root]:[password]";
+
+	/**
+	 * Metodo encargado de crear la conexion a la base de datos Mysql
+	 * 
+	 * @return
+	 */
+	public static Connection createConnection() {
+		return null;
+	}
+
+	
+	public VehiculoDAO getVehiculoDAO() {
+		return new OracleVehiculoDAO();
+	}
+	
+	
+	public co.edu.eafit.rasbus.dao.posicion.PosicionDAO getPosicionDAO() {
+		return new MysqlPosicionDAO();
+	}
+
+}
